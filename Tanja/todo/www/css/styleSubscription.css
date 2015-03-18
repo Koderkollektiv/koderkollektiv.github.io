@@ -1,0 +1,220 @@
+/* Empty. Add your own CSS if you like */
+@import url(http://fonts.googleapis.com/css?family=Signika:400,300,600,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600);
+
+
+/* The * selector applies styling for ALL selectors,
+	Mostly used for reseting and such */
+
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	list-style-type: none;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	-webkit-text-rendering: optimizeLegibility;
+	-moz-text-rendering: optimizeLegibility;
+	-ms-text-rendering: optimizeLegibility;
+	-o-text-rendering: optimizeLegibility;
+	text-rendering: optimizeLegibility;
+
+
+}
+
+body{
+	font-size: 1rem ;
+	font-family: Open Sans;
+	font-style: 700;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Accordion
+----------------------------------*/
+ #accordion section, #accordion .pointer, #accordion h1, #accordion p {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+#accordion *{
+  margin-bottom:0px;
+}
+
+#accordion h1 {
+  line-height:1.2;
+  font-size:20px;
+  background-color:rgba(255,0,0,0.3);
+  margin:0;
+  padding: 10px 10px 10px 30px;
+}
+
+#accordion h1 a {
+  color:black;
+}
+#accordion section {
+  border:1px #dddddd solid;
+  max-height: 400px;
+  box-sizing: content-box;
+  overflow: hidden;
+  padding: 0px;
+  background: #fc735f;
+
+
+}
+#accordion p {
+  padding:0 10px;
+  color:black;
+}
+#accordion section.ac_hidden p:not(.pointer) {
+  color:#fff;
+}
+
+#accordion section.ac_hidden {
+  max-height:44px;
+}
+#accordion .pointer {
+  padding:0;
+  margin:10px 0 0 6px;
+  line-height:20px;
+  width:13px;
+  position:absolute;
+}
+#accordion section:not(.ac_hidden) h1 {
+  background-color:rgba(255,0,0,0.7);
+}
+
+#accordion section:not(.ac_hidden) .pointer {
+  display:block;
+  -webkit-transform:rotate(90deg);
+  -moz-transform:rotate(90deg);
+  -o-transform:rotate(90deg);
+  transform:rotate(90deg);
+  padding:0;
+}
+
+
+/* end accordion styling */
+
+
+
+
+h2, h3, p, {
+	font-weight: 400italic;
+}
+
+
+
+
+
+
+.wrapperPage {
+	width: 100%;
+	margin: 0 auto;
+	background-color: #f2f2f2;
+
+}
+
+
+.wrapperRow {
+	width: 100%;
+	background-color: #fc735f;
+	border: 1px #f2f2f2 solid;
+	padding: 2%;
+
+}
+
+
+h2, .bold {
+	font-family:'Open Sans', sans-serif;
+	font-weight: 800;
+	text-transform: uppercase;
+	color: white;
+	font-size: 2rem;
+
+}
+
+h3, .regular{
+	font-family:'Open Sans', sans-serif;
+	font-weight: 400;
+	color: white;
+	line-height: 1rem;
+	font-size: 1rem;
+}
+
+.subscriptionDetailsPerson{
+	width: 100%;
+	background-color: #fc735f;
+	overflow: hidden;	
+}
+
+
+#data, #call, #text{
+	width: 100%;
+	background-color: #fc735f;
+	padding: 4%;
+	position: relative;
+
+}
+
+.absoluteCentered{
+	width: 100%;
+  	height: ;
+  	overflow: auto;
+  	margin: auto;
+  	position: relative;
+  	top: 0; left: 0; bottom: 0; right: 0;
+  	
+}
+
+
+
+
+.label{
+	float: left;
+	width: 10%;
+
+}
+
+.bar{
+	float: left;
+	width: 80%;
+}
+
+.btn{
+	float: right;
+	width: 2rem;
+	height: 2rem;
+}
+
+.Used{
+	float: left;
+	width: 80%;
+	background-color: #ffffff;
+	opacity: 1;
+	height: 2rem;
+}
+
+.Unused{
+	float: left;
+	width: 20%;
+	background-color: #ffffff;
+	opacity: 0.4;
+	height: 2rem;
+	
+}

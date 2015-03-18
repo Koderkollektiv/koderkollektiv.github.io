@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Usage (Month)</title>
+  <link rel="stylesheet" href="style.css">
+
+  <link href="css/styleSubscription.css" rel="stylesheet">
+
+    <!-- accordion -->  
+ 
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+  <style>
+
+
+
+
+ 
+
+  </style>
+</head>
+
+<body>
+
+<div id="accordion">
+  <section id="item1">
+    <p class="pointer">&#9654;</p><h1><a href="#">A long paragraph</a></h1>
+    
+   <div class="subscriptionDetailsPerson">
+
+      <div id="data">
+        <div class="absoluteCentered">
+
+          <div class="label"><h3>Data</h3></div>
+
+          <div class="bar">
+            <div class="Used"></div>
+            <div class="Unused"></div>
+          </div>
+
+          <div class="btn"><button class="btn"><h1>+</h1></button></div>
+
+        </div>
+
+      </div>
+
+
+      <div id="call">
+          <div class="absoluteCentered">
+
+            <div class="label"><h3>Calls</h3></div>
+
+            <div class="bar">
+              <div class="Used"></div>
+              <div class="Unused"></div>
+            </div>
+
+            <div class="btn"><button class="btn"><h1>+</h1></button></div>
+
+          </div>
+      </div>
+
+
+     <div id="text">
+          <div class="absoluteCentered">
+
+            <div class="label"><h3>Text</h3></div>
+
+            <div class="bar">
+              <div class="Used"></div>
+              <div class="Unused"></div>
+            </div>
+
+            <div class="btn"><button class="btn"><h1>+</h1></button></div>
+
+          </div>
+      </div>
+
+    
+    </div>
+    
+  </section>
+  <section id="item2" class="ac_hidden">
+    <p class="pointer">&#9654;</p><h1><a href="#">A medium paragraph</a></h1>
+    <p>Pellentesque habitant... </p>
+  </section>
+  <section id="item3" class="ac_hidden">
+    <p class="pointer">&#9654;</p><h1><a href="#">Two short paragraphs</a></h1>
+    <p>Pellentesque habitant... </p>
+    <p>Pellentesque habitant... </p>
+  </section>
+</div>
+
+<script> 
+  $(document).ready(function() {
+  $("#accordion section h1").click(function(e) {
+    $(this).parents().siblings("section").addClass("ac_hidden");
+    $(this).parents("section").removeClass("ac_hidden");
+
+    e.preventDefault();
+  });
+});
+</script>
+
+</body>
+</html>

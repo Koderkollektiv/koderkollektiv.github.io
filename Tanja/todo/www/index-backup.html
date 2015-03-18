@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+     <style>
+      #accordion *{
+        box-sizing: content-box;
+        height: auto;
+        overflow: hidden;
+        padding: 0px;
+        
+      }
+
+     </style>
+    
+     <link href="css/jquery-ui.css" rel="stylesheet">
+    <link href="css/jquery-ui.structure.css" rel="stylesheet">
+    <link href="css/jquery-ui.theme.css" rel="stylesheet">
+
+    <link href="css/styleSubscription.css" rel="stylesheet">
+
+
+   
+  <!-- accordion -->  
+ 
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+
+
+  </head>
+  <body ng-app="starter">
+
+    <ion-pane>
+      <ion-header-bar class="bar-positive">
+        <h1 class="title">Ionic Blank Starter</h1>
+      </ion-header-bar>
+
+
+
+
+
+      
+      <ion-content>
+
+
+
+
+
+<div id="accordion">
+  <h3>father statistic</h3>
+  
+    
+      <div class="subscriptionDetailsPerson">
+      <div id="data">
+        <div class="absoluteCentered">
+          <div class="label"><h3>Data</h3></div>
+          <div class="bar">
+            <div class="Used"></div>
+            <div class="Unused"></div>
+          </div>
+          <div class="btn"><button class="btn"><h1>+</h1></button></div>
+        </div>
+      </div>
+
+
+      <div id="call">
+          <div class="absoluteCentered">
+            <div class="label"><h3>Calls</h3></div>
+            <div class="bar">
+              <div class="Used"></div>
+              <div class="Unused"></div>
+            </div>
+            <div class="btn"><button class="btn"><h1>+</h1></button></div>
+          </div>
+      </div>
+
+
+      <div id="text">
+        <div class="absoluteCentered">
+          <div class="label"><h3>Text</h3></div>
+          <div class="bar">
+            <div class="Used"></div>
+            <div class="Unused"></div>
+          </div>
+          <div class="btn"><button class="btn"><h1>+</h1></button></div>
+        </div>
+      </div>
+    
+    
+ 
+</div>
+
+
+  <h3>daughter statistic</h3>
+  <div>
+    <div>
+    <div>Data</div>
+    <div>Calls</div>
+    <div>Text</div>
+  </div>
+  </div>
+   <h3>son statistic</h3>
+  <div>
+    <div>Data</div>
+    <div>Calls</div>
+    <div>Text</div>
+  </div>
+</div>
+
+<script>
+$( "#accordion" ).accordion();
+</script>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+      <div class="wrapperPage">
+  <div class="wrapperRow">
+    <span class="bold">name surname</span><span class="regular"> 072 4856739 </span>
+    <h3>Surf XL family</h3>
+  </div>
+
+  <div class="wrapperRow">
+    <span class="bold">name surname</span><span class="regular"> 072 4856739 </span>
+    <h3>Surf XL family</h3>
+  </div>
+
+  <div class="wrapperRow">
+    <span class="bold">name surname</span><span class="regular"> 072 4856739 </span>
+    <h3>Surf XL family</h3>
+
+    <div class="subscriptionDetailsPerson">
+      <div id="data">
+        <div class="absoluteCentered">
+          <div class="label"><h3>Data</h3></div>
+          <div class="bar">
+            <div class="Used"></div>
+            <div class="Unused"></div>
+          </div>
+          <div class="btn"><button class="btn"><h1>+</h1></button></div>
+        </div>
+      </div>
+
+
+      <div id="call">
+          <div class="absoluteCentered">
+            <div class="label"><h3>Data</h3></div>
+            <div class="bar">
+              <div class="Used"></div>
+              <div class="Unused"></div>
+            </div>
+            <div class="btn"><button class="btn"><h1>+</h1></button></div>
+          </div>
+      </div>
+
+
+      <div id="text">
+        <div class="absoluteCentered">
+          <div class="label"><h3>Data</h3></div>
+          <div class="bar">
+            <div class="Used"></div>
+            <div class="Unused"></div>
+          </div>
+          <div class="btn"><button class="btn"><h1>+</h1></button></div>
+        </div>
+      </div>
+    
+    </div>
+  </div>
+
+
+
+
+</div>
+
+
+
+
+
+      </ion-content>
+
+ 
+
+    </ion-pane>
+  </body>
+</html>
